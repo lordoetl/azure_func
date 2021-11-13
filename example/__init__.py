@@ -17,7 +17,7 @@ def default(o):
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
     #read in params
-    table_name=req.params.get('table_name')
+    table_name=req.params.get('table_name','DT_idx_XBRL')
     name = req.params.get('name')
     if not name:
         try:
