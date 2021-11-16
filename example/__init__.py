@@ -1,7 +1,7 @@
 import logging
 import json
 import time
-import pyodbc
+
 import datetime
 
 import azure.functions as func
