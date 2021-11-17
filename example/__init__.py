@@ -16,9 +16,9 @@ def default(o):
     if isinstance(o,(datetime.datetime, datetime.date)):
         return o.isoformat()
 
-lr = joblib.load("G:\\Projects\\azure_func\\example\\model.pkl") # Load "model.pkl"
+lr = joblib.load("model.pkl") # Load "model.pkl"
 print ('Model loaded')
-model_columns = joblib.load("G:\\Projects\\azure_func\\example\\model_columns.pkl") # Load "model_columns.pkl"
+model_columns = joblib.load("model_columns.pkl") # Load "model_columns.pkl"
 print ('Model columns loaded')
 
 
